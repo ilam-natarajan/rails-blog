@@ -1,24 +1,13 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+* Ruby - 2.7.1
 
-* Ruby version
+* Node version - 12.x
 
-* System dependencies
-
-* Configuration
+* `rails db:migrate` to migrate data to db. (when you have data) 
 
 * Database creation
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* `rails server` to start the server. All changes reflect instantly. don't need to
+stop & start the server. I am sold!!
