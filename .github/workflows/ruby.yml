@@ -27,7 +27,11 @@ jobs:
       uses: ruby/setup-ruby@ec106b438a1ff6ff109590de34ddc62c540232e0
       with:
         ruby-version: 2.7.1
+    - name: Install rails
+      run: gem install rails
     - name: Install dependencies
       run: bundle install
+    - name: webpacker
+      run: rails webpacker:install
     - name: Run tests
       run: bundle exec rake
