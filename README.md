@@ -1,3 +1,5 @@
+![Ruby](https://github.com/ilamparithiNatarajan/rails-blog/workflows/Ruby/badge.svg)
+
 # README
 
 
@@ -15,5 +17,5 @@ stop & start the server. I am sold!!
 
 
 
-CI:
-  Every push triggers github action, and runs test. Checks status check is enabled for merge.
+  CI:
+    Every push triggers github action, and runs test. Checks status check is enabled for merge.
