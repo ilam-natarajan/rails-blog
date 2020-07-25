@@ -27,6 +27,11 @@ jobs:
       uses: ruby/setup-ruby@ec106b438a1ff6ff109590de34ddc62c540232e0
       with:
         ruby-version: 2.7.1
+    - name: Setup Node.js environment
+    - uses: actions/setup-node@v2.1.1
+      with:
+        # Version Spec of the version to use.  Examples: 12.x, 10.15.1, >=10.15.0
+        node-version: 12.18.3
     - name: Install rails
       run: gem install rails
     - name: Install dependencies
