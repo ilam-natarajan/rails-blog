@@ -27,6 +27,7 @@ jobs:
       uses: ruby/setup-ruby@ec106b438a1ff6ff109590de34ddc62c540232e0
       with:
         ruby-version: 2.7.1
+
     - name: Setup Node.js environment
       uses: actions/setup-node@v2.1.1
       with:
@@ -34,11 +35,24 @@ jobs:
         node-version: 12.18.3
     - name: Delete yarn.lock
       run: rm yarn.lock
+      
+    - uses: actions/cache@v2
+      with:
+        path: vendor/bundle
+        key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
+        restore-keys: |
+          ${{ runner.os }}-gems-
+          
     - name: Install rails
       run: gem install rails
+      
     - name: Install dependencies
-      run: bundle install
+      run: |
+        bundle config path vendor/bundle
+        bundle install
+        
     - name: webpacker
       run: rails webpacker:install
+      
     - name: Run tests
       run: bundle exec rake
