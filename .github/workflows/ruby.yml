@@ -24,7 +24,7 @@ jobs:
     # To automatically get bug fixes and new Ruby versions for ruby/setup-ruby,
     # change this to (see https://github.com/ruby/setup-ruby#versioning):
     # uses: ruby/setup-ruby@v1
-      uses: ruby/setup-ruby@5f29a1cd8dfebf420691c4c9a0e832e2fae5a526
+      uses: ruby/setup-ruby@v1.52.0
       with:
         ruby-version: 2.7.1
 
