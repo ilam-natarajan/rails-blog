@@ -41,7 +41,7 @@ jobs:
         path: vendor/bundle
         key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
         restore-keys: |
-          ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
+          ${{ runner.os }}-gems-
           
     - name: Install rails
       run: gem install rails
