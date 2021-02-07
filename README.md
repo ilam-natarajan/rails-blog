@@ -7,6 +7,8 @@
 
 * Node version - 12.x
 
+* bundle exec rails webpacker:install
+
 * `rails db:migrate` to migrate data to db. (when you have data) 
 
 * Database creation
