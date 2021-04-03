@@ -3,7 +3,7 @@
 # README
 
 
-* Ruby - 2.7.1
+* Ruby - 3.0.0
 
 * Node version - 12.x
 
