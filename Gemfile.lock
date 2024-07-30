@@ -125,7 +125,7 @@ GEM
     marcel (1.0.4)
     matrix (0.4.2)
     mini_mime (1.1.5)
-    mini_portile2 (2.8.6)
+    mini_portile2 (2.8.7)
     minitest (5.23.0)
     msgpack (1.7.2)
     mutex_m (0.2.0)
@@ -225,7 +225,7 @@ GEM
       actionpack (>= 5.2)
       activesupport (>= 5.2)
       sprockets (>= 3.0.0)
-    sqlite3 (1.7.2)
+    sqlite3 (2.0.3)
       mini_portile2 (~> 2.8.0)
     stringio (3.1.0)
     strscan (3.1.0)
@@ -276,7 +276,7 @@ DEPENDENCIES
   selenium-webdriver
   spring
   spring-watcher-listen (~> 2.1.0)
-  sqlite3 (~> 1.7)
+  sqlite3 (~> 2.0)
   turbolinks (~> 5)
   tzinfo-data
   web-console (>= 3.3.0)
